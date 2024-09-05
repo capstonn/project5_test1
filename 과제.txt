@@ -1,0 +1,8 @@
+python mysql 연동 코드  --> shimseonjo.github.io
+- 전체 작업에 대한 규칙 정의(파일 작성)
+-main branch에서는 작업x
+-작업 branch를 만들어서 작업하고 커밋은 한 단위
+-한 단위의 작업이 완료되면 main에 merge
+-모든 작업 완료시 github에 올리기
+
+

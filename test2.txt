@@ -1,0 +1,84 @@
+1. git으로 관리할 경로까지 이동
+2. 초기화(.git 폴더 생성 - 숨겨져 있음)
+   git init
+
+3. 브랜치 기본 이름 변경하기(master일때)
+git config --global init.defaultBranch main
+
+4. git 상태확인
+git status
+
+5. git으로 관리하는 파일로 추가
+git add .  -->현재경로 기준
+
+6. commit(해당 시점을 저장)
+git commit -m "커밋 메시지"
+
+7. commit 이전에 계정정보 등록(--global 옵션은 해당컴퓨터 전체에 적용)
+git config --global user.name "Your name"
+git config --global user.email you@example.com
+
+
+8. commit 정보 확인
+git log
+
+9. 과제
+project_5/test1를 생성
+git으로 관리
+파일 생성은 알아서 최소 커밋의 수는 5번이상 되도록 하기
+
+--------------------
+로컬 컴퓨터(코드있음)와 github 사이트(비어있음) 연결
+1. remote 정보 확인
+git remote
+git remote -v
+
+2. remote 추가
+git remote add 리모트이름 github리파지토리주소
+git remote add origin https://github.com/capstonn/project5_work1.github
+
+3. remote 삭제
+git remote rm 리모트이름
+git remote rm origin
+
+
+4. github 데이터 넣기
+git push -u origin main
+git push 
+
+-----------------------------------------
+
+ls -al (숨겨진 파일 확인)
+
+-----------------------------
+clone
+- 코드가 없는 상태에서 전체 코드를 다운로드 받을 경우
+git clone url 디렉토리
+git clone url .
+
+-----------------------------
+pull
+-코드가 있는 상태에서 변경된 부분만 받을 경우
+
+----------------------------------
+브랜치 작성
+
+
+브랜치 삭제
+git branch -d 브랜치명
+
+브랜치 복구
+git branch 브랜치명 커밋번호
+
+git log --grapth --onelie
+
+
+파일 제외 시키기
+.gitignore
+
+
+-------------------
+팀으로 작업하기
+- Collaborators
+- pr 발행
+--------------------
